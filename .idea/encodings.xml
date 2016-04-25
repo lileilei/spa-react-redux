@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/containers/Start" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/containers/list/Index.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/containers/list/style.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/store/configureStore.dev.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/store/configureStore.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/store/configureStore.prod.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/webpack.config.prod.js" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
