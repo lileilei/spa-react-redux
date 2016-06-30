@@ -1,3 +1,6 @@
-node_modules/
 npm-debug.log
-*.idea/
+.idea/
+node_modules
+publish.sh
+.DS_Store
+test/

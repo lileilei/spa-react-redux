@@ -1,23 +1,57 @@
 import './style.css' 
 import React from 'react'
+import { Table, Icon } from 'antd';
 
+const columns = [{
+    title: '姓名',
+    dataIndex: 'name',
+    key: 'name',
+    render: (text) => <a href="#">{text}</a>,
+}, {
+    title: '年龄',
+    dataIndex: 'age',
+    key: 'age',
+}, {
+    title: '住址',
+    dataIndex: 'address',
+    key: 'address',
+}, {
+    title: '操作',
+    key: 'operation',
+    render: (text, record) => (
+        <span>
+      <a href="#">操作一{record.name}</a>
+      <span className="ant-divider"></span>
+      <a href="#">操作二</a>
+      <span className="ant-divider"></span>
+      <a href="#" className="ant-dropdown-link">
+        更多 <Icon type="down" />
+      </a>
+    </span>
+    ),
+}];
+
+const data = [{
+    key: '1',
+    name: '胡彦斌',
+    age: 32,
+    address: '西湖区湖底公园1号',
+}, {
+    key: '2',
+    name: '胡彦祖',
+    age: 42,
+    address: '西湖区湖底公园1号',
+}, {
+    key: '3',
+    name: '李大嘴',
+    age: 32,
+    address: '西湖区湖底公园1号',
+}];
 const Start = React.createClass({
   render: function() {
   	return (
           <div className="animated fadeIn" >
-            <div className="contents">
-              <h1>1、前期准备</h1>
-              <p>MTUI React 组件是基于 React.js 开发的 ，如果你没有使用过 React，请先访问 <a href="https://facebook.github.io/react/index.html">React官网</a>学习。</p>
-              <h1>2、获取源码</h1>
-              <p>MTUI React 代码托管在Github，你可以点击下面的按钮获取。为了帮助项目更好的发展，请不吝献出你的 Star。</p>
-              <p> <a href="https://github.com/mtsee/mtui-react">Github</a> </p>
-              <h1>3、源码说明</h1>
-              <p>
-              组件源码在 dev/js/mtui下面，将该文件夹拷贝到自己的项目下面。<br/><br/>
-              html模版建议：
-              </p>
-              <p id="code-shtml"></p>
-            </div>
+              <Table columns={columns} dataSource={data} />
           </div>
       );
   }

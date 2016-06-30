@@ -1,0 +1,36 @@
+html,body,#body,#root,#yh-layout{
+    height: 100%;
+}
+body{
+
+}
+#root,#yh-layout{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+}
+#yh-nav {
+    height: 55px;
+    background-color: #23b7e5;
+}
+#yh-nav .logo{
+    font-size: 25px;
+    color: #FFFFFF;
+    line-height: 55px;
+    margin-left: 50px;
+}
+#aside {
+    position: absolute;
+    width: 220px;
+    top: 55px;
+    left: 0;
+    bottom: 0;
+    z-index: 116;
+    background-color: #fff;
+    padding-bottom: 20px;
+    /*overflow-x: hidden;*/
+}
+
+#yh-main {
+    margin-left: 220px;
+}

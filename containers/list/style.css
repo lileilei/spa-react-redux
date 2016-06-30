@@ -1,2 +1,36 @@
-/*start*/
-.start{ margin-top: 60px;}
+
+/* 增加 16px 栅格间距 */
+.code-box-demo .row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.code-box-demo .row > div {
+    padding: 0 8px;
+}
+.code-box-demo .row .ant-card{
+    border: 1px solid #F1F1F1;
+}
+.code-box-demo .chart{
+    width: 300px;
+    height: 300px;
+}
+.code-box-demo .axis path,
+.code-box-demo .axis line{
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.code-box-demo .axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+
+.code-box-demo .MyRect {
+    fill: steelblue;
+}
+
+.code-box-demo .MyText {
+    fill: white;
+    text-anchor: middle;
+}

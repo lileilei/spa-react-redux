@@ -24,6 +24,9 @@ module.exports = {
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin()
   ],
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
   module: {
     externals:{
 
@@ -31,6 +34,12 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
+        loaders: ['babel'],
+        exclude: /node_modules/,
+        include: __dirname
+      },
+      {
+        test: /\.jsx$/,
         loaders: ['babel'],
         exclude: /node_modules/,
         include: __dirname
